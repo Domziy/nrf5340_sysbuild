@@ -12,12 +12,10 @@ LOG_MODULE_REGISTER(main_net, LOG_LEVEL_DBG);
 
 int main(void)
 {
-
+	LOG_DBG("Hello World! %s\n", CONFIG_BOARD);
 	while(1)
 	{
-		LOG_DBG("Hello World! %s\n", CONFIG_BOARD);
-		printk("Hello world");
-		k_yield();
+		k_msleep(1000);
 	}
 
 	return 0; /* Dummy application. Unused main */
