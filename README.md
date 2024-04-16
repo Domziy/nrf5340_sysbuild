@@ -2,7 +2,7 @@
 
 This repository contains the sysbuild configuration for projects using the NRF5340 chipset without a 32kHz crystal, supporting the build of both the application core and network core outside of the nrf SDK (ncs)
 
-NOTICE: This repo isn't working and is work in progress. There is a bug with sysbuild using nrf5340 hardware that has no 32kHz attached to it.
+Added sysbuild folder structure to overlay mcuboot.conf to synthesize its own LFCLK from HFCLK if you don't have a 32kHz attached to it.
 
 ## Repository Structure
 
